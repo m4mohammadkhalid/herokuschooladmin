@@ -7,6 +7,8 @@ const languageRoutes = require("./routes/LanguageRoutes");
 const projetRoutes = require("./routes/ProjetRoutes");
 const aboutRoute = require("./routes/AboutRoute");
 const skillRoutes = require("./routes/SkillRoutes");
+const teacherRoute = require("./routes/TeacherRoute");
+
 const userRoutes = require("./routes/UserRoutes");
 const messageRoutes = require("./routes/MessageRoutes");
 const mongoose = require("mongoose");
@@ -21,6 +23,8 @@ app.use("/experiences", experienceRoutes);
 app.use("/languages", languageRoutes);
 app.use("/projects", projetRoutes);
 app.use("/about", aboutRoute);
+app.use("/teacher", teacherRoute);
+
 app.use("/skills", skillRoutes);
 app.use("/users", userRoutes);
 app.use("/messages", messageRoutes);
